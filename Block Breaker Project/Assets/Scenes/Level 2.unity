@@ -799,9 +799,39 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4821110704064267810, guid: 4b4ea68bfe48e5a4c945b4e8ac9428fc,
         type: 3}
+      propertyPath: ballSounds.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4821110704064267810, guid: 4b4ea68bfe48e5a4c945b4e8ac9428fc,
+        type: 3}
       propertyPath: paddle1
       value: 
       objectReference: {fileID: 756088403}
+    - target: {fileID: 4821110704064267810, guid: 4b4ea68bfe48e5a4c945b4e8ac9428fc,
+        type: 3}
+      propertyPath: ballSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 3320fb3b411f33d439118e374d57c80a, type: 3}
+    - target: {fileID: 4821110704064267810, guid: 4b4ea68bfe48e5a4c945b4e8ac9428fc,
+        type: 3}
+      propertyPath: ballSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 58fd0b753b371414383100acecb58b39, type: 3}
+    - target: {fileID: 4821110704064267810, guid: 4b4ea68bfe48e5a4c945b4e8ac9428fc,
+        type: 3}
+      propertyPath: ballSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: a9e3abf739c859f4d863540316288e1b, type: 3}
+    - target: {fileID: 4821110704064267810, guid: 4b4ea68bfe48e5a4c945b4e8ac9428fc,
+        type: 3}
+      propertyPath: ballSounds.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: f811b4a3fd99bea48ade69024cf8b403, type: 3}
+    - target: {fileID: 4821110704064267810, guid: 4b4ea68bfe48e5a4c945b4e8ac9428fc,
+        type: 3}
+      propertyPath: ballSounds.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: 7a9c56b6ace74714190a61eab2a0b8b6, type: 3}
     - target: {fileID: 4821110704064267821, guid: 4b4ea68bfe48e5a4c945b4e8ac9428fc,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3150,7 +3180,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 58fd0b753b371414383100acecb58b39, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

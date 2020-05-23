@@ -5,10 +5,11 @@ using UnityEngine;
 public class Level : MonoBehaviour
 {
     [SerializeField] int breakableBlocks;
+    SceneLoader sceneLoader;
     // Start is called before the first frame update
     void Start()
     {
-        
+        sceneLoader = FindObjectOfType<SceneLoader>();
     }
 
     // Update is called once per frame
@@ -19,5 +20,12 @@ public class Level : MonoBehaviour
 
     public void CountBreakableBlocks(){
         breakableBlocks++;
+    }
+
+    public void BlockDestroyed(){
+        breakableBlocks--;
+        if(breakableBlocks <= 0){
+            sceneLoader.LoadNextScene();
+        }
     }
 }

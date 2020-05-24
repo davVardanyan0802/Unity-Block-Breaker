@@ -10,6 +10,17 @@ public class GameState : MonoBehaviour
     [SerializeField] int currentScore = 0;
     [SerializeField] TextMeshProUGUI scoreText;
     // Start is called before the first frame update
+
+
+        void Awake()
+    {
+        int gameStatusCount = FindObjectsOfType<GameState>().Length;
+        if(gameStatusCount > 1){
+            Destroy(gameObject);
+        }else{
+            DontDestroyOnLoad(gameObject);
+        }
+    }
     void Start()
     {
         scoreText.text = currentScore.ToString();
@@ -24,5 +35,9 @@ public class GameState : MonoBehaviour
     public void AddToScore(){
         currentScore+=pointsPerBlockDestroyed;
          scoreText.text = currentScore.ToString();
+    }
+
+    public void ResetGame(){
+        Destroy(gameObject);
     }
 }

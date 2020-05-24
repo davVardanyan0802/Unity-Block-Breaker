@@ -15,16 +15,19 @@ public class Level : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
-    public void CountBreakableBlocks(){
+    public void CountBreakableBlocks()
+    {
         breakableBlocks++;
     }
 
-    public void BlockDestroyed(){
+    public void BlockDestroyed()
+    {
         breakableBlocks--;
-        if(breakableBlocks <= 0){
+        if (breakableBlocks <= 0)
+        {
             sceneLoader.LoadNextScene();
         }
     }
